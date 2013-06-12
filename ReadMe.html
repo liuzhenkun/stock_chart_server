@@ -1,0 +1,26 @@
+
+  __________________建议使用VIM打开____________________
+ *                                                     *
+**                   DEMO说明                          **         
+ *_____________________________________________________*
+
+运行方法: node pic-server.js启动后，用浏览器打开index.html, 即可看到绘制出的三张K线图，和四张M线图
+How to execute?
+This is a nodejs application, so use [node pic-server.js] to start this app and then access [http://localhost:10091/index.html]
+
+1). lib文件夹
+   1.1 lib下包含了绘图的核心文件以及绘图所需要的配置文件(直接调用后端的画图程序供前端绘图)
+   1.2 klineView.js绘制K线图逻辑, mlineView.js绘制M线图逻辑, pic_settings.js是配置文件
+
+2). testDrawLines.js
+   2.1 测试绘图程序的JS文件， 即由此测试文件调用LIB中的函数实现画图功能
+   2.2 此文件中详细介绍了该如何调用LIB实现画图，可参考注释
+
+3). index.html
+   3.1 直接用浏览器打开index.html，就可执行测试文件testDrawLines.js
+   3.2 此文件描述了使用JS调用LIB的规则，可以参考注释
+
+4). 因为代码一直在更新， 也希望调用者不定时更新代码
+
+ <!-- 设置编码，否则中文会显示乱码 -->
+<meta charset="UTF-8">
