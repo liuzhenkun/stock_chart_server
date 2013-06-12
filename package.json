@@ -1,0 +1,13 @@
+{    
+	"name": "chart-server",
+	"version": "0.1.0",    
+	"description": "PicServer Service",    
+	"author": "zhenkum.liu@gmai.com",    
+	"dependencies": {        
+		"express": ">=2.5.2"
+	},    
+	"main": "index",    
+	"scripts": {        
+		"start": "node app.js"    
+	}
+} 

@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <!-- 设置编码，否则中文会显示乱码 -->
+    <meta charset="UTF-8">
+    <!-- -----------------引入测试文件以及LIB, 必须按此顺序引入 ------------------>
+    <!-- testDrawLines.js 是测试js文件 -->
+    <script type="text/javascript" src="./testDrawLines.js"></script>
+    <!-- pic_settings.js是画图所需要的配置文件，需要先引入 -->
+    <script type="text/javascript" src="./pic_settings.js"></script>
+    <!-- drawKline.js & drawMline.js 是k, m线图主文件 -->
+    <script type="text/javascript" src="../lib/klineView.js"></script>
+    <script type="text/javascript" src="../lib/mlineView.js"></script>
+    <!-- -------------------------------------------------------------------- -->
+  </head>
+
+  <body>
+    <!-- The divs for kline -->
+    <div id="newKlineWebBig">
+      <canvas id="myCanvasNewKlineWebBig"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/webAppBig/kline?stockid=600000"> -->
+    </div>
+    <div id="newKlineWebSmall">
+      <canvas id="myCanvasNewKlineWebSmall"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/webAppSmall/kline?stockid=600000"> -->
+    </div>
+
+    <div id="klineWeb">
+      <canvas id="myCanvasKlineWeb"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/web/kline?stockid=600000"> -->
+    </div>
+
+    <div id="gupiao123Kline">
+      <canvas id="myCanvasGupiao123Kline"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123/kline?stockid=600000"> -->
+      <!-- <img src="http://172.16.39.156:8088/gupiao123/kline?stockid=600000"> -->
+    </div>
+
+    <div id="gupiao123BigKline">
+      <canvas id="myCanvasGupiao123BigKline"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123Big/kline?stockid=600000"> -->
+    </div>
+
+    <div id="gupiao123V3Kline">
+      <canvas id="myCanvasGupiao123V3Kline"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123V3/kline?stockid=600000&avgFlag=2"> -->
+      <!-- <img src="http://172.16.39.156:8088/gupiao123V3/kline?stockid=600000&avgFlag=2"> -->
+    </div>
+
+    <div id="gupiao123V3BigKline">
+      <canvas id="myCanvasGupiao123V3BigKline"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123V3Big/kline?stockid=600000&avgFlag=2"> -->
+    </div>
+
+
+    <!-- The divs for mline -->
+    <div id="newMlineWebBig">
+      <canvas id="myCanvasNewMlineWebBig"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/webAppBig/mline?stockid=600000" width="595" height="466"> -->
+    </div>
+
+    <div id="newMlineWebSmall">
+      <canvas id="myCanvasNewMlineWebSmall"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/webAppSmall/mline?stockid=600000" width="595" height="275"> -->
+    </div>
+
+    <div id="newWebAppMainPage">
+      <canvas id="myCanvasNewWebAppMainPage"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/webAppMainPage/mline?stockid=600000" width="405" height="190"> -->
+    </div>
+
+    <div id="newWebAppTrend">
+      <canvas id="myCanvasNewWebAppTrend"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/webAppTrend/mline?stockid=000737" width="216" height="100"> -->
+    </div>
+
+    <div id="mlineWeb">
+      <canvas id="myCanvasMlineWeb"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/web/mline?stockid=600000&mType=0" width="300" height="265"> -->
+      <!-- <img src="http://172.16.39.156:8088/web/mline?stockid=600000&mType=0" width="300" height="265"> -->
+    </div>
+
+    <div id="mlineGupiao123">
+      <canvas id="myCanvasMlineGupiao123"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123/mline?stockid=600000" width="220" height="130"> -->
+      <!-- <img src="http://172.16.39.156:8088/gupiao123/mline?stockid=600000" width="220" height="130"> -->
+    </div>
+
+    <div id="mlineGupiao123Big">
+      <canvas id="myCanvasMlineGupiao123Big"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123Big/mline?stockid=600000" width="400" height="273"> -->
+    </div>
+
+    <div id="mlineGupiao123V3">
+      <canvas id="myCanvasMlineGupiao123V3"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123V3/mline?stockid=600000" width="300" height="180"> -->
+      <!-- <img src="http://172.16.39.156:8088/gupiao123V3/mline?stockid=600000" width="300" height="180"> -->
+    </div>
+
+    <div id="mlineGupiao123V3Big">
+      <canvas id="myCanvasMlineGupiao123V3Big"></canvas>
+      <!-- <img src="http://192.168.11.10:10082/gupiao123V3Big/mline?stockid=600000" width="600" height="360"> -->
+    </div>
+    
+  </body>
+</html>
